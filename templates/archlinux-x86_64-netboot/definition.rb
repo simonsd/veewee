@@ -10,7 +10,7 @@ Veewee::Session.declare({
     '<Enter>',
     '<Wait><Wait><Wait><Wait><Wait><Wait><Wait><Wait><Wait><Wait>',
     '<Wait><Wait><Wait><Wait><Wait><Wait><Wait><Wait><Wait><Wait>',
-    'dhcpcd eth0<Enter><Wait><Wait><Wait><Wait>',
+    'dhcpcd eth0<Enter><Wait><Wait><Wait><Wait><Wait><Wait><Wait>',
     'passwd<Enter>',
     'vagrant<Enter>',
     'vagrant<Enter>',
