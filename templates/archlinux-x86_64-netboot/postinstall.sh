@@ -58,7 +58,7 @@ sed -i 's/^#\(.*leaseweb.*\)/\1/' /etc/pacman.d/mirrorlist
 # install some packages
 gem install --no-ri --no-rdoc chef facter
 cd /tmp
-git clone https://github.com/puppetlabs/puppet.git
+git clone git://github.com/puppetlabs/puppet.git
 cd puppet
 ruby install.rb --bindir=/usr/bin --sbindir=/sbin 2>/dev/null
 
