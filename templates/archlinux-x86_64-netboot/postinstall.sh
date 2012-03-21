@@ -65,6 +65,10 @@ ruby install.rb --bindir=/usr/bin --sbindir=/sbin 2>/dev/null
 # set up networking
 [[ $PKGSRC == 'net' ]] && sed -i 's/^\(interface=*\)/\1eth0/' /etc/rc.conf
 
+# rebuild initrd for virtio block devices
+sed -i 's/\(MODULES="\)"/\1virtio_blk virtio_net virtio_pci"/' /etc/mkinitcpio.conf
+mkinitcpio -p linux
+
 # leave the chroot
 ENDCHROOT
 
